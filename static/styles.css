@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.menu-bar {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar li {
+    margin: 0 15px;
+}
+
+.menu-bar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-bar a:hover {
+    color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #FEF3E2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 4em; 
+    margin-block: 15px;
+}
+
+h2 {
+    color: #EEEEEE;
+    margin-block: 0px;
+}
+
+p {
+    color: #333333;
+}
+
+.headerbox {
+    background-color: #606676;
+    padding-inline: 100px;
+    margin: auto;
+    width: fit-content;
+}
+
+.sectiontitleleft {
+    background-color: #708871;
+    width: fit-content;
+    padding-inline: 30px;
+    position: sticky;
+    z-index: 1;
+}
+
+.sectiontitleright {
+    background-color: #708871;
+    margin-left: auto;
+    width: fit-content;
+    padding-inline: 30px;
+    position: sticky;
+    z-index: 1;
+}
+
+.sectionbody {
+    background-color: #BEC6A0;
+    margin-top: -20px;
+    margin-inline: 30px;
+    margin-bottom: 20px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+.home {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: flex 0.3s ease-in-out;
+        overflow: hidden;
+    }
+
+    .section:hover {
+        flex: 3;
+    }
+
+    #section1 { background-color: #767c6cad; }
+    #section2 { background-color: #557f19ad; }
+    #section3 { background-color: #1c7d75ad; }
+
+    h2 {
+        color: white;
+        font-size: 2em;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .section {
+            flex: 1;
+            transition: flex 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            flex: 3;
+        }
+    }
+}
