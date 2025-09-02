@@ -1,4 +1,34 @@
-import Image from "next/image";
+"use client";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import EthanPearce from "./pages/ethanpearce";
+
+// The titles for your tabs/sections
+const titles = [
+    "Ethan Pearce",
+    "Software Engineer",
+    "Game Designer",
+    "3D Printer",
+    "Father",
+];
+
+const tabContents = [
+    EthanPearce(),
+    "About my work in Software Engineering...",
+    "Details on Game Design projects...",
+    "My experience and projects in 3D Printing...",
+    "My journey and thoughts about being a Father...",
+];
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
 
 export default function Home() {
   return (
