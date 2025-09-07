@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import EthanPearce from "./pages/ethanpearce";
 import SoftwareDeveloper from "./pages/softwaredeveloper";
 import GameDesigner from "./pages/gamedesigner";
+import ThreeDPrinter from "./pages/threedprinter";
 
 // The titles for your tabs/sections
 const titles = [
@@ -18,7 +19,7 @@ const tabContents = [
     <EthanPearce />,
     <SoftwareDeveloper />,
     <GameDesigner />,
-    "My experience and projects in 3D Printing...",
+    <ThreeDPrinter />,
     "My journey and thoughts about being a Father...",
 ];
 
