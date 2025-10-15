@@ -5,6 +5,7 @@ import EthanPearce from "./pages/ethanpearce";
 import SoftwareDeveloper from "./pages/softwaredeveloper";
 import GameDesigner from "./pages/gamedesigner";
 import ThreeDPrinter from "./pages/threedprinter";
+import Father from "./pages/father";
 
 // The titles for your tabs/sections
 const titles = [
@@ -20,7 +21,7 @@ const tabContents = [
     <SoftwareDeveloper />,
     <GameDesigner />,
     <ThreeDPrinter />,
-    "My journey and thoughts about being a Father...",
+    <Father />,
 ];
 
 export default function Home() {
